@@ -29,30 +29,30 @@ const puppies: Puppy[] = [
   },
   {
     id: 2,
-    name: 'Рекс',
-    breed: 'Немецкая овчарка',
+    name: 'Марсель',
+    breed: 'Йоркширский терьер (бивер)',
     age: '3 месяца',
-    image: 'https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/ffbe17a6-2509-465a-83aa-3c4c71c295c5.jpg',
-    price: '45 000 ₽',
-    description: 'Активный и умный щенок с отличной родословной'
+    image: 'https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/09e2814e-6091-416a-90bb-0d3bc16d5a07.jpg',
+    price: '60 000 ₽',
+    description: 'Мальчик с идеальными пропорциями и роскошным окрасом'
   },
   {
     id: 3,
-    name: 'Бади',
-    breed: 'Золотистый ретривер',
+    name: 'Амелия',
+    breed: 'Той-пудель',
     age: '2 месяца',
-    image: 'https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/b443c694-95f1-4eae-bc35-21bee11e189f.jpg',
-    price: '40 000 ₽',
-    description: 'Дружелюбный и игривый компаньон для всей семьи'
+    image: 'https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/8b1252f0-2021-4abc-a3c7-055d8f8c0db7.jpg',
+    price: '50 000 ₽',
+    description: 'Нежная малышка абрикосового окраса с кукольной мордочкой'
   },
   {
     id: 4,
-    name: 'Лаки',
-    breed: 'Лабрадор',
-    age: '4 месяца',
-    image: 'https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/7e5e1716-c1c1-4fa7-926f-3e44f5d22ed1.jpg',
-    price: '38 000 ₽',
-    description: 'Обучаемый и преданный друг с прекрасным характером'
+    name: 'Рубин',
+    breed: 'Карликовый пудель',
+    age: '3 месяца',
+    image: 'https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/7308658b-cd1d-4936-a19b-46140fbf2280.jpg',
+    price: '48 000 ₽',
+    description: 'Яркий рыжий мальчик с кудрявой шерстью и живым характером'
   }
 ];
 
@@ -293,7 +293,7 @@ export default function Index() {
               <Card className="p-8">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg leading-relaxed mb-4">
-                    АРТ МОРИС — это семейный питомник с более чем 15-летней историей. Мы специализируемся на разведении немецких овчарок, лабрадоров и золотистых ретриверов.
+                    АРТ МОРИС — это семейный питомник с более чем 15-летней историей. Мы специализируемся на разведении цветных йоркширских терьеров (биверов) и пуделей различных размеров.
                   </p>
                   <p className="text-lg leading-relaxed mb-4">
                     Наши собаки — чемпионы российских и международных выставок. Мы уделяем особое внимание здоровью, характеру и социализации каждого щенка.
