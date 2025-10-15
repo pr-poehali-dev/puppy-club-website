@@ -20,6 +20,15 @@ interface Puppy {
 const puppies: Puppy[] = [
   {
     id: 1,
+    name: 'Тиффани',
+    breed: 'Йоркширский терьер (бивер)',
+    age: '2 месяца',
+    image: 'https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/d836936a-98c6-4dd0-90bd-51a53cf1ebe1.jpg',
+    price: '55 000 ₽',
+    description: 'Очаровательная девочка с шикарной трехцветной шерстью'
+  },
+  {
+    id: 2,
     name: 'Рекс',
     breed: 'Немецкая овчарка',
     age: '3 месяца',
@@ -28,7 +37,7 @@ const puppies: Puppy[] = [
     description: 'Активный и умный щенок с отличной родословной'
   },
   {
-    id: 2,
+    id: 3,
     name: 'Бади',
     breed: 'Золотистый ретривер',
     age: '2 месяца',
@@ -37,7 +46,7 @@ const puppies: Puppy[] = [
     description: 'Дружелюбный и игривый компаньон для всей семьи'
   },
   {
-    id: 3,
+    id: 4,
     name: 'Лаки',
     breed: 'Лабрадор',
     age: '4 месяца',
