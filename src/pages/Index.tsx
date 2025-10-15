@@ -74,7 +74,7 @@ export default function Index() {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-2xl">
                 🐾
               </div>
-              <span className="text-2xl font-bold text-primary">Kennel Club</span>
+              <span className="text-2xl font-bold text-primary">АРТ МОРИС</span>
             </div>
             <div className="hidden md:flex gap-6">
               <button onClick={() => setActiveSection('main')} className="text-foreground hover:text-primary transition-colors font-medium">
@@ -284,7 +284,7 @@ export default function Index() {
               <Card className="p-8">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg leading-relaxed mb-4">
-                    Kennel Club — это семейный питомник с более чем 15-летней историей. Мы специализируемся на разведении немецких овчарок, лабрадоров и золотистых ретриверов.
+                    АРТ МОРИС — это семейный питомник с более чем 15-летней историей. Мы специализируемся на разведении немецких овчарок, лабрадоров и золотистых ретриверов.
                   </p>
                   <p className="text-lg leading-relaxed mb-4">
                     Наши собаки — чемпионы российских и международных выставок. Мы уделяем особое внимание здоровью, характеру и социализации каждого щенка.
@@ -395,7 +395,7 @@ export default function Index() {
                     <Icon name="Mail" size={24} className="text-primary mt-1" />
                     <div>
                       <h3 className="font-bold text-lg mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@kennelclub.ru</p>
+                      <p className="text-muted-foreground">info@artmoris.ru</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -414,7 +414,7 @@ export default function Index() {
 
       <footer className="bg-secondary text-secondary-foreground py-8 mt-20">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-lg mb-2">Kennel Club © 2024</p>
+          <p className="text-lg mb-2">АРТ МОРИС © 2024</p>
           <p className="text-sm opacity-80">Профессиональное разведение с любовью</p>
         </div>
       </footer>
