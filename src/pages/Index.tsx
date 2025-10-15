@@ -95,6 +95,9 @@ export default function Index() {
               <button onClick={() => setActiveSection('services')} className="text-foreground hover:text-primary transition-colors font-medium">
                 Услуги
               </button>
+              <button onClick={() => setActiveSection('care')} className="text-foreground hover:text-primary transition-colors font-medium">
+                Уход
+              </button>
               <button onClick={() => setActiveSection('gallery')} className="text-foreground hover:text-primary transition-colors font-medium">
                 Галерея
               </button>
@@ -347,6 +350,158 @@ export default function Index() {
                   </Card>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {activeSection === 'care' && (
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto animate-fade-in">
+              <h2 className="text-5xl font-bold mb-12 text-center">Уход за питомцем</h2>
+              
+              <div className="grid gap-8 mb-12">
+                <Card className="overflow-hidden">
+                  <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 border-b">
+                    <h3 className="text-3xl font-bold flex items-center gap-3">
+                      <span className="text-4xl">🐕</span>
+                      Йоркширский терьер (бивер)
+                    </h3>
+                  </div>
+                  <CardContent className="p-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="Scissors" size={20} className="text-primary" />
+                          Груминг
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Ежедневное расчесывание шерсти</li>
+                          <li>• Купание 1-2 раза в месяц</li>
+                          <li>• Стрижка каждые 2-3 месяца</li>
+                          <li>• Чистка ушей еженедельно</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="Apple" size={20} className="text-primary" />
+                          Питание
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Премиум корм для мелких пород</li>
+                          <li>• 3-4 раза в день (щенки)</li>
+                          <li>• 2 раза в день (взрослые)</li>
+                          <li>• Свежая вода всегда в доступе</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="Activity" size={20} className="text-primary" />
+                          Активность
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Прогулки 2-3 раза в день</li>
+                          <li>• Игры и социализация</li>
+                          <li>• Не переносит холод — нужна одежда</li>
+                          <li>• Отлично подходит для квартиры</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="HeartPulse" size={20} className="text-primary" />
+                          Здоровье
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Вакцинация по графику</li>
+                          <li>• Обработка от паразитов</li>
+                          <li>• Уход за зубами (чистка)</li>
+                          <li>• Плановые осмотры у ветеринара</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden">
+                  <div className="bg-gradient-to-r from-secondary/10 to-primary/10 p-6 border-b">
+                    <h3 className="text-3xl font-bold flex items-center gap-3">
+                      <span className="text-4xl">🐩</span>
+                      Пудель (той и карликовый)
+                    </h3>
+                  </div>
+                  <CardContent className="p-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="Scissors" size={20} className="text-secondary" />
+                          Груминг
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Расчесывание 3-4 раза в неделю</li>
+                          <li>• Профессиональная стрижка раз в 6-8 недель</li>
+                          <li>• Купание раз в 3-4 недели</li>
+                          <li>• Чистка глаз и ушей регулярно</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="Apple" size={20} className="text-secondary" />
+                          Питание
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Сбалансированный корм премиум-класса</li>
+                          <li>• 3 раза в день (щенки до 6 месяцев)</li>
+                          <li>• 2 раза в день (взрослые)</li>
+                          <li>• Контроль веса — склонны к полноте</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="Activity" size={20} className="text-secondary" />
+                          Активность
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Очень активная порода</li>
+                          <li>• Прогулки минимум 2 раза в день</li>
+                          <li>• Любят плавать и игры с мячом</li>
+                          <li>• Легко поддаются дрессировке</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+                          <Icon name="HeartPulse" size={20} className="text-secondary" />
+                          Здоровье
+                        </h4>
+                        <ul className="space-y-2 text-muted-foreground">
+                          <li>• Регулярная вакцинация</li>
+                          <li>• Проверка ушей (склонность к отитам)</li>
+                          <li>• Уход за зубами и деснами</li>
+                          <li>• Проверка глаз у ветеринара</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <Card className="bg-gradient-to-br from-accent/5 to-primary/5 border-2 border-primary/20">
+                <CardHeader>
+                  <CardTitle className="text-2xl flex items-center gap-2">
+                    <Icon name="Info" size={24} className="text-primary" />
+                    Консультация специалиста
+                  </CardTitle>
+                  <CardDescription className="text-base">
+                    Мы предоставляем пожизненную поддержку всем владельцам наших щенков. Наши специалисты всегда готовы ответить на ваши вопросы по уходу, воспитанию и здоровью питомца.
+                  </CardDescription>
+                </CardHeader>
+                <CardFooter>
+                  <Button className="bg-primary hover:bg-primary/90">
+                    <Icon name="Phone" size={18} className="mr-2" />
+                    Получить консультацию
+                  </Button>
+                </CardFooter>
+              </Card>
             </div>
           </div>
         </section>
