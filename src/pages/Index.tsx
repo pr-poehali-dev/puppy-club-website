@@ -115,24 +115,40 @@ export default function Index() {
 
       {activeSection === 'main' && (
         <>
-          <section className="relative py-20 overflow-hidden">
+          <section className="relative py-12 md:py-20 overflow-hidden">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center animate-fade-in">
-                <h1 className="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
-                  Премиум Щенки
-                </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
-                  Выберите верного друга из питомника с многолетней историей
-                </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 rounded-full shadow-lg hover:shadow-xl transition-all">
-                    <Icon name="Heart" size={20} className="mr-2" />
-                    Смотреть щенков
-                  </Button>
-                  <Button size="lg" variant="outline" className="text-lg px-8 rounded-full border-2 hover:bg-accent/10">
-                    <Icon name="Award" size={20} className="mr-2" />
-                    Наши награды
-                  </Button>
+              <div className="grid md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+                <div className="text-center md:text-left animate-fade-in">
+                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+                    Премиум Щенки
+                  </h1>
+                  <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 font-light">
+                    Выберите верного друга из питомника с многолетней историей
+                  </p>
+                  <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 rounded-full shadow-lg hover:shadow-xl transition-all">
+                      <Icon name="Heart" size={20} className="mr-2" />
+                      Смотреть щенков
+                    </Button>
+                    <Button size="lg" variant="outline" className="text-lg px-8 rounded-full border-2 hover:bg-accent/10">
+                      <Icon name="Award" size={20} className="mr-2" />
+                      Наши награды
+                    </Button>
+                  </div>
+                </div>
+                <div className="relative animate-scale-in">
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/49c1d1fa-e315-4c90-ad9d-4216088f5094/files/d836936a-98c6-4dd0-90bd-51a53cf1ebe1.jpg"
+                      alt="Щенок йоркширского терьера"
+                      className="w-full h-[400px] md:h-[500px] object-cover"
+                    />
+                    <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-bold text-lg shadow-lg backdrop-blur-sm">
+                      🐾 Доступен
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+                  <div className="absolute -top-4 -left-4 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
                 </div>
               </div>
             </div>
